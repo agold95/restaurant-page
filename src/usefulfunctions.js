@@ -14,7 +14,7 @@ function createHeader1(content) {
 
 function createHeader4(content) {
     const h4 = document.createElement('h4');
-    h4.textContent = content;
+    h4.innerHTML = content;
 
     return h4;
 }
