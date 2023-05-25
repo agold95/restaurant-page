@@ -33,6 +33,7 @@ function renderMenu() {
     icecream_container.appendChild(createImg(Icecream, "icecream"));
     icecream_container.appendChild(createparagraph('Icecream!!!!'))
 
+    // End text for page
     const end_text = menuContent.appendChild(createHeader4('We only serve the <em>very coolest</em> of food at <em><b>Very Cool Restaurant</b></em>.'))
 
     return menuContent;
