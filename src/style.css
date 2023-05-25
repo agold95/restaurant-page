@@ -12,12 +12,13 @@
     padding: 0;
 }
 
-.home-title {
+.home-title, .menu-title {
     text-align: center;
     font-size: 2.5em;
     background-color: var(--background-dark);
     color: var(--font-light);
     padding: 1em;
+    padding-bottom: 3em;
 }
 
 .home-image {
