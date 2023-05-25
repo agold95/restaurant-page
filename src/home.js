@@ -8,9 +8,10 @@ function renderHome() {
     // Creates container for home-page content
     const home_content =  createDiv('home-content');
 
-    // Creates container and title content
+   /* // Creates container and title content
     const home_title = home_content.appendChild(createDiv('home-title'));
     home_title.appendChild(createHeader1('Very Cool Restaurant'));
+    */
 
     // Creates home page image
     const home_image = home_content.appendChild(createDiv('home-image'));
@@ -28,4 +29,10 @@ function renderHome() {
     return home_content;
 }
 
-export default renderHome;
+function loadHome() {
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(renderHome());
+  }
+
+export default loadHome;

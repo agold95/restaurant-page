@@ -9,9 +9,11 @@ function renderMenu() {
     // Creates container for menu content
     const menuContent = createDiv('menu-content');
 
+    /*
     // Creates container and title content
     const menu_title = menuContent.appendChild(createDiv('menu-title'));
     menu_title.appendChild(createHeader1('Menu'));
+    */
 
     // Creates container for menu items
     const menu_grid = menuContent.appendChild(createDiv('menu-grid'));
@@ -39,4 +41,10 @@ function renderMenu() {
     return menuContent;
 }
 
-export default renderMenu;
+function loadMenu() {
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(renderMenu());
+  }
+
+export default loadMenu;

@@ -6,9 +6,11 @@ function renderContact() {
     // Creates container for contact content
     const contact_content = createDiv('contact-content');
 
+    /*
     // Creates container and title content
     const contact_title = contact_content.appendChild(createDiv('contact-title'));
     contact_title.appendChild(createHeader1('Contact'));
+    */
 
     // Creates container for location and information
     const contact_info = contact_content.appendChild(createDiv('contact-info'));
@@ -20,4 +22,10 @@ function renderContact() {
     return contact_content;
 }
 
-export default renderContact;
+function loadContact() {
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(renderContact());
+  }
+
+export default loadContact;

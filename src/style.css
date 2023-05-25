@@ -12,6 +12,43 @@
     padding: 0;
 }
 
+.restaurant-name {
+    text-align: center;
+    font-size: 2.5em;
+    background-color: var(--background-dark);
+    color: var(--font-light);
+    padding: 1em;
+    padding-bottom: 1em;
+}
+
+nav {
+    background-color: var(--background-dark);
+    text-align: center;
+    padding: 1em;
+}
+
+button {
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--font-light);
+    padding: 1em;
+    margin: 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-10%);
+    transition: transform 0.2s;
+}
+
+.nav-button.active {
+    border-bottom: 2px solid white;
+    transform: translateY(-20%);
+    transition: transform 0.2s;
+}
+
 .home-title, .menu-title, .contact-title {
     text-align: center;
     font-size: 2.5em;
@@ -25,7 +62,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2em;
+    margin: 1em 10em;
+    padding: 1em;
+    background-color: var(--background-dark);
+    border-radius: 0.2em;
 }
 
 .home-image > img {
@@ -65,10 +105,15 @@
     border-radius: 0.5em;
 }
 
+.home-text-p p:hover {
+    transform: translateY(-17%);
+    transition: transform 0.2s;
+}
+
 .menu-grid {
     display: grid;
-    justify-items: center;
     align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 2em;
@@ -78,6 +123,18 @@
 .menu-grid > div {
     background-color: var(--background-dark);
     border-radius: 1em;
+    padding: 1em;
+    margin: 2em 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-grid > div:hover {
+    background-color: rgba(65, 65, 65, 0.836);
+    transform: translateY(-5%);
+    transition: transform 0.3s;
 }
 
 .menu-grid > div > img {
@@ -88,11 +145,11 @@
 .menu-grid > div > p {
     text-align: center;
     font-size: 2em;
-    color: white;
+    color: var(--font-light);
 }
 
 .menu-content > h4 {
-    color: white;
+    color: var(--font-light);
     font-size: 1.6em;
     text-align: center;
     background-color: var(--background-dark);
@@ -103,7 +160,7 @@
 
 .contact-info {
     background-color: var(--background-dark);
-    color: white;
+    color: var(--font-light);
     font-size: 1.3em;
     text-align: center;
     border-radius: 0.2em;
